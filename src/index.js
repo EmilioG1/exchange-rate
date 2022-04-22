@@ -23,7 +23,8 @@ async function getExchange(num, currency) {
   if (!withError) {
     return await response.conversion_result;
   } else {
-    return withError;
+    $('.output').hide();
+    return $('.error').text(response + `: Click reset to try again.`);
   }
 }
 
@@ -31,8 +32,9 @@ $("#rate").submit(async function (event) {
   event.preventDefault();
   let input1 = parseInt($('#input1').val());
   let input2 = $('#input2').val();
-  const output = await getExchange(input1, input2);
-  $('.output').text(`That will equal ${output} dollars!`);
+  let output = await getExchange(input1, input2);
+  output = output.toFixed(2);
+  $('.output').text(`That will equal $${output}!`);
 });
 
 $('#reset').click(async function (event) {
