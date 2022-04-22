@@ -12,9 +12,3 @@ export class ApiCall {
       });
   }
 }
-
-export class ExchangeRate {
-  constructor(money1, money2);
-    this.euro = euro;
-  
-}

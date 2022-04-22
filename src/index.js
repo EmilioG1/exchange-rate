@@ -16,13 +16,29 @@ function error(element, response) {
   }
 }
 
-async function getExchange(currency1,currency2) {
-  const url = `https://v6.exchangerate-api.com/v6/9e9e75e88278f7b0de98ee1a/pair/${currency1}/${currency2}`;
+function rate(num, value) {
+  if (value === 'EUR') {
+    return num * 0.9213;
+  } else if (value === 'GBP') {
+    return num * 0.7672;
+  } else if (value === 'JPY') {
+    return num * 128.3156;
+  } else if (value === 'AMD') {
+    return num * 467.7888;
+  } else if (value === 'CHF') {
+    return num * 0.9519;
+  } else {
+    return error('.output', "not a currency");
+  }
+}
+
+async function getExchange(currency) {
+  const url = `https://v6.exchangerate-api.com/v6/9e9e75e88278f7b0de98ee1a/latest/${currency}`;
   const response = await ApiCall.get(url);
   const withError = error($('.output'), response);
   if (!withError) {
     const rateURL = response.url;
-    $('#input1').text(rateURL);
+    const output = rate(rateURL);
   }
 }
 

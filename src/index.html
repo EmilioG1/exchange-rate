@@ -9,9 +9,16 @@
     <h1>Echange Rate Calculator</h1>
     <form id="rate">
       <label for="exchange-rate">$</label>
-      <input type="number" id="input1" placeholder="Dollar amount" required>
+      <input type="number" id="input1" placeholder="Dollar amount" min="1" required>
       <label for="exchange-rate">To which currency?</label>
-      <input type="text" id="input2" placeholder="Second currency" required>
+      <select class="form-select" id="input2">
+        <option selected>Select a currency to exchange</option>
+        <option value="EUR">Euro</option>
+        <option value="GBP">Pound Sterling</option>
+        <option value="JPY">Japanese Yen</option>
+        <option value="AMD">Armenian Dram</option>
+        <option value="CHF">Swiss Franc</option>
+      </select>
       <button class="btn btn-success" type="submit">EXCHANGE IT</button>
     </form>
     <div class="output"></div>
