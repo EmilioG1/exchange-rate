@@ -24,7 +24,9 @@ async function getExchange(num, currency) {
   if (!withError) {
     return await response.conversion_result;
   } else {
-    alert(response);
+    return `
+    There was an error pulling this data from the API
+    `;
   }
 }
 
