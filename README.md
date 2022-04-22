@@ -1,31 +1,39 @@
-# (Application Name)
+# Exchange Rate Calculator
 
-#### (Brief Description of Application)
+#### A calculator that will give users the current exchange rate in US dollars.
 
-#### By (Your Name Here)
+#### By Emilio Gonzales
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _Javascript_
+* _jQuery_
+* _Webpack_
+* _JSON_
+* _ExchangeRate-API_
 
 ## Description
 
+This web application with take a dollar input and a second currency. It will then pull from an API the exchange rate in US dollars of one of five possible currency options.
+
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone this repository to your desktop
+* Navigate to the top level of the exchange-rate main branch
+* Run $ npm install in your terminal
+* Navigate to src/ file
+* Open index.html file in your terminal
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _issues with API errors not being specifically defined_
 
 ## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
-## Contact Information
+
+_If you have any issues or questions don't hesitate to contact me on GitHub, and please feel free to add to this code_
+
+Copyright (c) _2022_ _Emilio Gonzales_

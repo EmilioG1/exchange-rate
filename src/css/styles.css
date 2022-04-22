@@ -11,6 +11,10 @@ h1 {
   font-weight: 600;
 }
 
+h1:hover {
+  color: blueviolet;
+}
+
 label {
   margin-bottom: 30px;
   font-family: 'Courier New', Courier, monospace;
@@ -21,6 +25,10 @@ label {
 button {
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 .output, .error {
