@@ -8,8 +8,13 @@ export class ApiCall {
         return response.json();
       })
       .catch(function (error) {
-        console.log(error);
         return error;
       });
   }
+}
+
+export class ExchangeRate {
+  constructor(money1, money2);
+    this.euro = euro;
+  
 }
