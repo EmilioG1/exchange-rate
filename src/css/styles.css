@@ -9,6 +9,16 @@ h1 {
   margin-bottom: 50px;
   font-family: serif;
   font-weight: 600;
+  background-color: rgb(235, 214, 183);
+  border: 2px blanchedalmond solid;
+  border-radius: 22px;
+}
+
+form {
+  border: 3px solid blanchedalmond;
+  border-radius: 15px;
+  padding: 15px;
+  padding-top: 30px;
 }
 
 h1:hover {
@@ -24,7 +34,7 @@ label {
 
 button {
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 button:hover {
@@ -35,6 +45,7 @@ button:hover {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
   font-size: 22px ;
+  margin-top: 20px;
 }
 
 .output:hover {
