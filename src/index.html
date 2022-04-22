@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Exchange Rate</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Echange Rate Calculator</h1>
+    <form id="rate">
+      <label for="exchange-rate">Which currency?</label>
+      <input type="text" id="input1" placeholder="First currency" required>
+      <label for="exchange-rate">To which currency?</label>
+      <input type="text" id="input2" placeholder="Second currency" required>
+      <button class="btn btn-success" type="submit" id="submit">EXCHANGE IT</button>
+    </form>
+    <div class="output"></div>
+  </div>
 </body>
 </html>
